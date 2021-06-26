@@ -1,8 +1,8 @@
 .header-container {
-  height: 80rem;
+  height: 110rem;
   display: grid;
   grid-template-columns: repeat(20,1fr);
-  grid-template-rows: repeat(12,1fr);
+  grid-template-rows: repeat(18,1fr);
 
   .header {
     &-white-block {
@@ -84,10 +84,10 @@
      }
 
      &-rightImage {
-       grid-row: 9/-1;
+       grid-row: 9/16;
        grid-column: 16/20;
        margin-left: -5rem;
-       height: 120%;
+       //height: 120%;
      }
 
    }
