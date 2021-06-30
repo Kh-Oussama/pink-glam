@@ -143,9 +143,9 @@ li {
 }
 
 .open .card-content {
-  height: 83rem;
+  height: fit-content;
   max-width: 815px;
-
+  padding-bottom: 3rem;
   overflow: hidden;
 }
 
