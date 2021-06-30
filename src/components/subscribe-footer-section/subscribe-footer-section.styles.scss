@@ -1,0 +1,140 @@
+.Sub-footer-container{
+  height: 100rem;
+  display: grid;
+  grid-template-columns: repeat(24,1fr);
+  grid-template-rows: repeat(19,1fr);
+  .image {
+    grid-row: 7/16;
+    grid-column: 16/22 ;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 99;
+  }
+  .subscribe-section {
+    grid-column: 6/23;
+    grid-row: 4/9;
+    h1 {
+      font-size: 10rem;
+      font-weight: normal;
+      line-height: .8;
+      font-family: 'Abhaya Libre', sans-serif;
+    }
+    p {
+      font-size: 1.8rem;
+      margin-top: 1.5rem;
+      font-family: 'Abhaya Libre', sans-serif;
+
+    }
+  }
+  .footer-section {
+    background-color: white;
+    grid-column: 1/25;
+    margin-right: 4rem;
+    grid-row: 12/19;
+  }
+
+  .footer-links {
+    grid-row: 13/16;
+    grid-column: 4/12;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    .link {
+      font-size: 1.8rem;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .footer-bottom {
+    grid-row: 17/18;
+    grid-column: 4/22;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: 1fr;
+
+    .left {
+     grid-column: 1/7;
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      font-family: 'Abhaya Libre', sans-serif;
+
+    }
+    .right {
+      grid-column: 13/19;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .link a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.formSub {
+  grid-column: 6/19;
+  grid-row: 7/8;
+  display: grid;
+  grid-template-columns: repeat(13,1fr);
+  grid-template-rows: 1fr;
+
+  &__input {
+    font-family: inherit;
+    font-size: 1.8rem;
+    grid-column: 1/11;
+    color:black;
+    background-color: white;
+    border: none;
+    padding: .7rem 2rem;
+    transition: all .2s;
+    height:5.5rem;
+
+    &:focus {
+      outline: none;
+      background-color: white;
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
+    }
+  }
+
+  &__button {
+    grid-column: 11/14;
+    background-color: var(--color-black);
+    flex: 1;
+    height: 5.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: inherit;
+    letter-spacing: .2rem;
+    transition: all .3s;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 199;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+
+
+}

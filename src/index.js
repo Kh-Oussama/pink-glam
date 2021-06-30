@@ -4,7 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import App from './App';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
-
+import '@fortawesome/fontawesome-free/js/all';
 
 ReactDOM.render(
   <React.StrictMode>
