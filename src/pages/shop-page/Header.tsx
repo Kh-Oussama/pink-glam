@@ -4,7 +4,7 @@ import { Avatar } from "react-lorem-ipsum";
 export const Header = () => (
     <header className="shop-header">
         <span className="date">Tuesday, August 13th</span>
-        <h1 className="h1">Today</h1>
+        <h1 className="h1">marques disponible</h1>
         <div className="avatar">
             <Avatar />
         </div>

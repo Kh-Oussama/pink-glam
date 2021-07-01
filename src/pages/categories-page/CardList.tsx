@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Card } from "../../components/Card/index";
-import { CardData } from "./types";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Card } from "../../components/categories-card/index";
+import { CardData } from "../shop-page/types";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 
 const List = ({ match, history }) => (
@@ -18,10 +18,12 @@ const List = ({ match, history }) => (
 );
 
 export const CardList = () => (
-    <Router>
-        <Route path={["/:id", "/"]} component={List} />
-    </Router>
-);
+    <div>
+        <Switch>
+            <Route exact path={["/shop/mark/categories/list/:id", "/shop/mark/categories/list/"]} component={List} />
+        </Switch>
+    </div>
+        );
 
 const cardData: CardData[] = [
     // Photo by ivan Torres on Unsplash

@@ -2,6 +2,7 @@ import React from "react";
 import {Switch, Route, Redirect} from 'react-router-dom';
 import HomePage from "./pages/home-page/home-page.component";
 import ShopPage from "./pages/shop-page/shop-page.component";
+import CategoriesPage from "./pages/categories-page/categories-page.ccomponent";
 
 
 
@@ -10,10 +11,11 @@ import ShopPage from "./pages/shop-page/shop-page.component";
 function App() {
   return (
       <React.Fragment>
-        <switch>
+        <Switch>
             <Route exact path="/" component={HomePage}/>
-            <Route exact path="/shop" component={ShopPage}/>
-        </switch>
+            <Route  path="/shop/mark/categories" component={CategoriesPage}/>
+            <Route  path="/shop/marks" component={ShopPage}/>
+        </Switch>
       </React.Fragment>
   );
 }

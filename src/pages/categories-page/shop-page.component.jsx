@@ -1,18 +1,19 @@
 import React from 'react';
+import {Header} from "./Header";
+import {CardList} from "./CardList";
+import './shop-page.styles.scss'
 import NavigationBar from "../../components/navigation-bar/navigation-bar.component";
-import {CardList} from "../categories-page/CardList";
 
-
-const CategoriesPage = () => {
+const ShopPage = () => {
     return (
-        <div className="categories-page">
+        <div className="shop-page">
             <NavigationBar/>
             <div className="container">
-                {/*<Header/>*/}
+                {/*<Header />*/}
                 <CardList />
             </div>
         </div>
     )
 }
 
-export default CategoriesPage;
+export default ShopPage;

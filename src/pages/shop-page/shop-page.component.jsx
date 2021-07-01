@@ -1,6 +1,6 @@
 import React from 'react';
 import {Header} from "./Header";
-import {CardList} from "./CardList";
+import CardList from "./CardList";
 import './shop-page.styles.scss'
 import NavigationBar from "../../components/navigation-bar/navigation-bar.component";
 
@@ -9,7 +9,7 @@ const ShopPage = () => {
         <div className="shop-page">
             <NavigationBar/>
             <div className="container">
-                {/*<Header />*/}
+                <Header />
                 <CardList />
             </div>
         </div>

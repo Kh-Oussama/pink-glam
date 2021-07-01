@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Card } from "../../components/Card/index";
+import { Card } from "../../components/shop-card/index";
 import { CardData } from "./types";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {Redirect, Route, Switch} from "react-router-dom";
 
 
 const List = ({ match, history }) => (
@@ -17,10 +17,13 @@ const List = ({ match, history }) => (
     </ul>
 );
 
-export const CardList = () => (
-    <Router>
-        <Route path={["/:id", "/"]} component={List} />
-    </Router>
+const CardList = () => (
+    <div>
+    <Switch>
+        <Route exact path={["/shop/marks/list/:id", "/shop/marks/list/"]} component={List} />
+    </Switch>
+    </div>
+
 );
 
 const cardData: CardData[] = [
@@ -89,3 +92,5 @@ const cardData: CardData[] = [
     //     backgroundColor: "#CC555B"
     // }
 ];
+
+export default CardList;
