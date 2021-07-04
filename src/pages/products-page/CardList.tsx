@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Card } from "../../components/categories-card/index";
+import { Card } from "../../components/products-card/index";
 import { CardData } from "../shop-page/types";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
@@ -20,7 +20,7 @@ const List = ({ match, history }) => (
 export const CardList = () => (
     <div>
         <Switch>
-            <Route exact path={["/shop/mark/categories/:id", "/shop/mark/categories"]} component={List} />
+            <Route exact path={["/shop/mark/category/products/:id", "/shop/mark/category/products"]} component={List} />
         </Switch>
     </div>
         );

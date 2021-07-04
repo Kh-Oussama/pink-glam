@@ -1,16 +1,16 @@
 import React from 'react';
 import NavigationBar from "../../components/navigation-bar/navigation-bar.component";
-import {CardList} from "../categories-page/CardList";
+import {CardList} from "./CardList";
 import {Header} from "../shop-page/Header";
 import SubscribeFooterSection from "../../components/subscribe-footer-section/subscribe-footer-section.component";
 
 
-const CategoriesPage = () => {
+const ProductsPage = () => {
     return (
-        <div className="categories-page">
+        <div className="Products-page">
             <NavigationBar/>
             <div className="container">
-                <Header title={'les catégories disponibles'}/>
+                <Header title={'les produits disponibles'}/>
                 <CardList />
             </div>
             <SubscribeFooterSection/>
@@ -18,4 +18,4 @@ const CategoriesPage = () => {
     )
 }
 
-export default CategoriesPage;
+export default ProductsPage;

@@ -88,7 +88,7 @@ export const Card = memo(
                         <ContentPlaceholder title={category}/>
                     </motion.div>
                 </div>
-                {!isSelected && <Link to={`/shop/marks/list/${id}`} className={`card-open-link`} />}
+                {!isSelected && <Link to={`/shop/marks/${id}`} className={`card-open-link`} />}
             </li>
         );
     },
@@ -103,6 +103,6 @@ const Overlay = ({ isSelected }) => (
         style={{ pointerEvents: isSelected ? "auto" : "none" }}
         className="overlay"
     >
-        <Link to="/shop/marks/list" />
+        <Link to="/shop/marks" />
     </motion.div>
 );

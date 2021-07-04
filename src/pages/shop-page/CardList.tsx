@@ -20,7 +20,7 @@ const List = ({ match, history }) => (
 const CardList = () => (
     <div>
     <Switch>
-        <Route exact path={["/shop/marks/list/:id", "/shop/marks/list/"]} component={List} />
+        <Route exact path={["/shop/marks/:id", "/shop/marks"]} component={List} />
     </Switch>
     </div>
 
